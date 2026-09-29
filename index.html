@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Tanishka 🎂</title>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="confetti"></canvas>
+<div id="hearts"></div>
+
+<!-- Envelope -->
+<div id="envelope-screen">
+  <img src="assets/envelope.png" alt="Envelope" id="envelope">
+  <p>♡ This is for you, Tanishka ♡</p>
+</div>
+
+<!-- Main -->
+<main id="main" hidden>
+  <h1 class="title">Happy Birthday, Tanishka! 🎉</h1>
+  <nav class="tabs">
+    <button class="tab active" data-tab="cake">🎂 Cake</button>
+    <button class="tab" data-tab="letter">💌 Letter</button>
+    <button class="tab" data-tab="flowers">🌸 Flowers</button>
+    <button class="tab" data-tab="ask">❓ One Question</button>
+  </nav>
+
+  <section id="cake" class="panel active">
+    <div id="countdown" class="countdown"></div>
+    <div class="cake">
+      <div class="candles">
+        <div class="candle"><i class="flame"></i></div>
+        <div class="candle"><i class="flame"></i></div>
+        <div class="candle"><i class="flame"></i></div>
+      </div>
+      <div class="layer l1"></div><div class="layer l2"></div><div class="plate"></div>
+    </div>
+    <button class="btn" id="blow">🕯️ Blow the candles &amp; make a wish</button>
+    <p id="wishmsg" class="wishmsg"></p>
+  </section>
+
+  <section id="letter" class="panel">
+    <div class="paper">
+      <h2>My dearest Tanishka,</h2>
+      <p>Happy Birthday, my love! 🎂 Today is all about you, because you are the most beautiful thing in my life.</p>
+      <p>Since you came into my life, everything has become brighter. Your smile is my favorite place, and being with you is my greatest happiness.</p>
+      <p>My only wish is that you get all the happiness in the world, and that I stay by your side, every day, every year.</p>
+      <p class="sign">I love you, always ❤️<br>— Yours, always</p>
+    </div>
+  </section>
+
+  <section id="flowers" class="panel">
+    <iframe src="flowers/flower.html" title="Flowers for Tanishka" loading="lazy"></iframe>
+  </section>
+
+  <section id="ask" class="panel">
+    <div id="q">
+      <video src="assets/reply-me-love.mp4" autoplay muted loop playsinline></video>
+      <h2>Tanishka, do you love me? 🥺</h2>
+      <div class="qbtns">
+        <button class="btn yes" id="yes">Yes 💖</button>
+        <button class="btn no" id="no">No</button>
+      </div>
+    </div>
+    <div id="a" hidden>
+      <video src="assets/love-me.mp4" loop playsinline></video>
+      <h2>I knew it! 😍 I love you too, so much ❤️</h2>
+    </div>
+  </section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
